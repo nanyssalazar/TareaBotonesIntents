@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ABCCDC"
+    tools:context=".MainActivity">
+
+<TextView
+    android:id="@+id/tvTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/materia_de_programacion"
+    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+    app:layout_constraintStart_toStartOf="parent" />
+
+<EditText
+    android:id="@+id/etCalificacion"
+    android:layout_width="190dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="@+id/tvTitle"
+    app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+<Button
+    android:id="@+id/bnEnviar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20sp"
+    android:text="@string/enviar"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
